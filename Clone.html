@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Corp. // База Данных: Клоны Зоны-44</title>
+    <style>
+        :root {
+            --bg-main: #0c0e12;
+            --panel-bg: #151922;
+            --accent-orange: #ff7700;
+            --accent-red: #cc2424;
+            --text-light: #e2e8f0;
+            --text-muted: #64748b;
+            --border-color: #262f41;
+            --success-green: #10b981;
+        }
+
+        body {
+            font-family: 'Consolas', 'Courier New', monospace;
+            background-color: var(--bg-main);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #07090d;
+            border-bottom: 3px solid var(--accent-orange);
+            padding: 35px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .corp-tag {
+            color: var(--accent-orange);
+            font-size: 0.8rem;
+            letter-spacing: 6px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            color: #ffffff;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .layout-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 992px) {
+            .layout-grid {
+                grid-template-columns: 2.8fr 1.2fr;
+            }
+        }
+
+        section {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            color: var(--accent-orange);
+            font-size: 1.3rem;
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .warning-box {
+            background-color: rgba(204, 36, 36, 0.1);
+            border: 1px solid var(--accent-red);
+            border-left: 5px solid var(--accent-red);
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .variant-block {
+            margin-top: 20px;
+            padding-left: 15px;
+            border-left: 3px solid var(--accent-orange);
+        }
+
+        .variant-block h3 {
+            margin: 0 0 5px 0;
+            color: #ffffff;
+            font-size: 1.1rem;
+        }
+
+        .spec-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .spec-table td {
+            padding: 10px 5px;
+            border-bottom: 1px solid rgba(255,255,255,0.03);
+            vertical-align: top;
+        }
+
+        .spec-table td:first-child {
+            color: var(--text-muted);
+            font-weight: bold;
+            width: 40%;
+        }
+
+        .sidebar-card {
+            background-color: #0f1218;
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            border-radius: 4px;
+            position: sticky;
+            top: 20px;
+        }
+
+        .visual-desc {
+            background-color: rgba(255, 119, 0, 0.05);
+            border: 1px dashed var(--accent-orange);
+            padding: 15px;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="corp-tag">Horizon Corporation // Сектор Био-Инженерии</div>
+        <h1>Проект «Икар»: Клон Зоны-44</h1>
+    </header>
+
+    <div class="container">
+        <div class="layout-grid">
+            
+            <!-- Основное научно-тактическое описание -->
+            <main>
+                <div class="warning-box">
+                    <strong style="color: var(--accent-red);">ВНИМАНИЕ:</strong> Объект обладает боевыми возможностями «Цикла» (Суперсолдата). При обнаружении задействовать протоколы максимальной огневой мощи. Локализация: Морская платформа Омега.
+                </div>
+
+                <section>
+                    <h2>1. Происхождение и Логика Создания</h2>
+                    <p><strong>Клоны Зоны-44 (Site 44 Clones)</strong> представляют собой вершину нелегальной генетической программы конгломерата Horizon Corporation, известной как <strong>Проект «Икар» (Project Icarus)</strong>. Данные био-единицы создавались на изолированном глубоководном комплексе (Морские платформы Омега) с конкретной целью — получить контролируемый эквивалент сбежавшего суперсолдата Синдиката (Протагониста игры, Субъекта 106).</p>
+                    <p>Биологической основой для ДНК послужили ткани покойного доктора Эмерсона, чье тело было эксгумировано и доставлено в Зону-44. В процессе инкубации генетический код подвергся глубокой аугментации, а также агрессивному ментальному программированию с использованием «Чудо-воды» (Miracle Water). Полученные гибриды лишены собственной воли, беспрекословно верны Horizon и выступают в роли личной гвардии для защиты ключевых секретов платформы.</p>
+                </section>
+
+                <section>
+                    <h2>2. Боевой Потенциал и Модификации</h2>
+                    <p>В отличие от регулярных оперативников и наемников Horizon, Клоны Зоны-44 обладают сверхчеловеческими рефлексами, идентичными способностям Субъекта 106. Они разделены на четыре боевых класса:</p>
+                    
+                    <div class="variant-block">
+                        <h3>Штурмовая Единица (SMG Variant)</h3>
+                        <p>Стандартный, наиболее мобильный тип клона. Экипирован пистолетом-пулеметом с глушителем. Делает ставку на внезапные фланговые обходы.Склонен к затяжной маскировке.</p>
+                    </div>
+
+                    <div class="variant-block">
+                        <h3>Поджигатель (Incendiary Shotgun Variant)</h3>
+                        <p>Боец прорыва, вооруженный автоматическим дробовиком с зажигательными боеприпасами «Дыхание Дракона». Чрезвычайно опасен на ближней дистанции, способен мгновенно лишить игрока брони.</p>
+                    </div>
+
+                    <div class="variant-block">
+                        <h3>Инженер-Ликвидатор (Penetration Bolt Launcher)</h3>
+                        <p>Ведет огонь с дальних дистанций специализированными тяжелыми болтами, способными прошивать укрытия и наносить огромный разовый урон.</p>
+                    </div>
+
+                    <div class="variant-block">
+                        <h3>Тяжелый Клон (Heavy Minigun Vanguard)</h3>
+                        <p>Уникальная, тяжелобронированная модификация клона. Обладает колоссальным запасом здоровья и ведет огонь на подавление из ручного шестиствольного пулемета с глушителем.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>3. Ключевые Способности и Тактика Противодействия</h2>
+                    <p>В ходе тактического столкновения с Клонами Зоны-44 необходимо учитывать их ключевые аномальные навыки:</p>
+                    <ul>
+                        <li><strong>Улучшенный камуфляж (Extended Cloak):</strong> Клоны способны активировать режим невидимости на гораздо более длительный срок, чем сам Субъект 106. Маскировка спадает только в момент выстрела или физической атаки.</li>
+                        <li><strong>Силовые подкаты (Aggressive Slide):</strong> Клоны активно используют резкие подкаты для сокращения дистанции и маневрирования. Прямой удар Клона в подкате сбивает игрока с ног и наносит урон.</li>
+                        <li><strong>Уязвимость к шоку:</strong> Несмотря на высокую прочность, Клоны Зоны-44 восприимчивы к электрическому урону. Использование шоковых гранат или оружия, бьющего током, мгновенно перегружает их нервную систему, прерывая маскировку и делая их беззащитными.</li>
+                    </ul>
+                </section>
+            </main>
+
+            <!-- Технический паспорт (Боковая панель) -->
+            <aside>
+                <div class="sidebar-card">
+                    <h2 style="font-size: 1.1rem; border: none; margin-bottom: 15px; color: #fff;">Спецификация ОУС</h2>
+                    
+                    <table class="spec-table">
+                        <tr>
+                            <td>Кодовое имя:</td>
+                            <td>Site 44 Clone</td>
+                        </tr>
+                        <tr>
+                            <td>Базовый геном:</td>
+                            <td>Dr. Emerson</td>
+                        </tr>
+                        <tr>
+                            <td>Статус угрозы:</td>
+                            <td style="color: var(--accent-red); font-weight: bold;">EXTREME</td>
+                        </tr>
+                        <tr>
+                            <td>Локация:</td>
+                            <td>Зона-44 / Платформы «Омега»</td>
+                        </tr>
+                        <tr>
+                            <td>Способность 1:</td>
+                            <td>Сверх-маскировка</td>
+                        </tr>
+                        <tr>
+                            <td>Способность 2:</td>
+                            <td>Смертоносный подкат</td>
+                        </tr>
+                    </table>
+
+                    <div class="visual-desc">
+                        <strong>Внешний вид:</strong> Визуально напоминают Субъекта 106 в его первоначальной тюремной робе. Лицо полностью скрыто черной балаклавой и массивными тактическими очками с ярко-красным свечением линз.
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; Horizon Corporation. Все права защищены. Документ подлежит автоматическому уничтожению при фиксации нарушения периметра.
+    </footer>
+
+</body>
+</html>
